@@ -1,0 +1,49 @@
+:root {
+    --indigo: #4B0076;
+    --lavender: #bf92e4;
+}
+
+* {
+    padding: 5px;
+    margin: 5px;
+    
+    .roboto-lab2 {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+}
+
+h1{
+    color: var(--lavender);
+}
+
+#backgroundColor {
+    background-color: indigo;
+}
+
+a.navTitle {
+    text-decoration: none;
+    color: var(--indigo);
+    margin-right: 15px;
+}
+
+th {
+    padding: 12px;
+    background-color: var(--indigo);
+    color: var(--lavender);
+    width: fit-content;
+    
+}
+
+:nth-child(2) {
+    background-color: aliceblue;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
