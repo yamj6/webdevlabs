@@ -1,0 +1,61 @@
+:root {
+    --indigo: #4B0076;
+    --lavender: #bf92e4;
+    --thistle: #d6bde7;
+    --lightmauve: #d6cadd;
+}
+
+* {
+    padding: 5px;
+    margin: 5px;
+}
+
+.roboto-lab2 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-lab2Bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: none;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1{
+    color: var(--lavender);
+}
+
+#backgroundColor {
+    background-color: indigo;
+}
+
+a.navTitle {
+    text-decoration: none;
+    color: var(--indigo);
+    margin-right: 15px;
+}
+
+th {
+    padding: 12px;
+    background-color: var(--indigo);
+    color: var(--lavender);
+    width: fit-content;
+}
+
+td:nth-child(even) {
+    background-color: var(--thistle);
+}
+td:nth-child(odd) {
+    background-color: var(--lightmauve);
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
