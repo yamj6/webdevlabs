@@ -29,8 +29,7 @@ function FindTheBanana(L) {
     for (let index = 0; index < L.length; index++) {
         const fruit = L[index];
         if (fruit == "Banana") {
-            // window.alert("found Banana in " + index);
-            let p;
+            window.alert("found Banana in " + index);
         }
     }
 }
@@ -41,8 +40,7 @@ L1.forEach(FindTheBanana2);
 L2.forEach(FindTheBanana2);
 function FindTheBanana2(fruit, index, array) {
     if (fruit == "Banana") {
-        // window.alert("We found a banana in the " + array + " array");
-        let p;
+        window.alert("We found a banana in the " + array + " array");
     }
 }
 
