@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script defer src="../static/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,7 @@
     </title>
 </head>
 
-<body class="roboto-lab2" onload="addYear()">
+<body class="roboto-lab2">
     <header>
         <h1 id="backgroundColor">
             Annie Min
@@ -35,41 +34,45 @@
     </header>
 
     <div class="main">
-            <h2 class="roboto-lab2Bold">Contact Me</h2>
-
-            <form target="_self">
-                <label for="fullname">Your name:</label><br>
-                <input type="text" id="fullname" name="fullname" required><br>
-
-                <label for="email">Your email:</label><br>
-                <input type="text" id="email" name="email" required><br>
-
-                <label for="comment">Comment:</label><br>
-                <textarea name="comment" id="comment" required></textarea><br>
-
-                <input type="submit" value="SEND" onclick="validate()">
-            </form>
-
-            <p id="validationFailMessage"></p>
-
-            <table>
+            <h2 class="roboto-lab2Bold">Curriculum Vitae</h2>
+            <table style="width:70%">
                 <tr>
-                    <th class="roboto-lab2Bold">Contact Method Description</th>
+                    <th style="width:20%">Name</th>
+                    <th>Description</th>
                 </tr>
                 <tr>
-                    <td>Email: anniemin@andrew.cmu.edu</td>
+                    <td>Carnegie Mellon University</td>
+                    <td>
+                        Expected graduation May 2027
+                    </td>
                 </tr>
                 <tr>
-                    <td>Phone: 111-222-3333</td>
+                    <td>Los Angeles Center for Enriched Studies (LACES)</td>
+                    <td>
+                        Graduated in 2023 <br>
+                        GPA 4.0
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="" target="_blank">LinkedIn</a></td>
+                    <td>Institute 3</td>
+                    <td>
+                        description
+                    </td>
+                </tr>
+                <tr>
+                    <td>Institute 4</td>
+                    <td>
+                        description
+                    </td>
                 </tr>
             </table>
+            <p>
+                <a href="../static/Resume.pdf" target="_blank">My Resume (pdf)</a>
+            </p>
     </div>
 
     <footer>
-        <p id="copyYear"></p>
+        Copyright©[2025][Annie Min]
     </footer>
 </body>
 </html>

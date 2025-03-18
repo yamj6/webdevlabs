@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script defer src="../static/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,7 @@
     </title>
 </head>
 
-<body class="roboto-lab2" onload="addYear()">
+<body class="roboto-lab2">
     <header>
         <h1 id="backgroundColor">
             Annie Min
@@ -39,18 +38,13 @@
 
             <form target="_self">
                 <label for="fullname">Your name:</label><br>
-                <input type="text" id="fullname" name="fullname" required><br>
-
+                <input type="text" id="fullname" name="fullname"><br>
                 <label for="email">Your email:</label><br>
-                <input type="text" id="email" name="email" required><br>
-
+                <input type="text" id="email" name="email"><br>
                 <label for="comment">Comment:</label><br>
-                <textarea name="comment" id="comment" required></textarea><br>
-
-                <input type="submit" value="SEND" onclick="validate()">
+                <textarea name="comment" id="Comment"></textarea><br>
+                <input type="submit" value="SEND">
             </form>
-
-            <p id="validationFailMessage"></p>
 
             <table>
                 <tr>
@@ -69,7 +63,7 @@
     </div>
 
     <footer>
-        <p id="copyYear"></p>
+        Copyright©[2025][Annie Min]
     </footer>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
     </title>
 </head>
 
-<body class="roboto-lab2">
+<body class="roboto-lab2" onload="addYear()">
     <header>
         <h1 id="backgroundColor">
             Annie Min
@@ -43,14 +44,13 @@
                 <tr>
                     <td>Carnegie Mellon University</td>
                     <td>
-                        Expected graduation May 2027
+                        description
                     </td>
                 </tr>
                 <tr>
-                    <td>Los Angeles Center for Enriched Studies (LACES)</td>
+                    <td>Institute 2</td>
                     <td>
-                        Graduated in 2023 <br>
-                        GPA 4.0
+                        description
                     </td>
                 </tr>
                 <tr>
@@ -72,7 +72,7 @@
     </div>
 
     <footer>
-        Copyright©[2025][Annie Min]
+        <p id="copyYear"></p>
     </footer>
 </body>
 </html>

@@ -59,19 +59,3 @@ form * {
     margin: auto;
     text-align: center;
 }
-
-#favList {
-    display: none;
-}
-
-#readMoreIntro {
-    display: none;
-}
-
-#readLessButton {
-    display: none;
-}
-
-#validationFailMessage {
-    text-align: center;
-}

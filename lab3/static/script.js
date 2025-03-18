@@ -29,8 +29,7 @@ function FindTheBanana(L) {
     for (let index = 0; index < L.length; index++) {
         const fruit = L[index];
         if (fruit == "Banana") {
-            // window.alert("found Banana in " + index);
-            let tempNoWindowAlert;
+            window.alert("found Banana in " + index);
         }
     }
 }
@@ -41,8 +40,7 @@ L1.forEach(FindTheBanana2);
 L2.forEach(FindTheBanana2);
 function FindTheBanana2(fruit, index, array) {
     if (fruit == "Banana") {
-        // window.alert("We found a banana in the " + array + " array");
-        let tempNoWindowAlert;
+        window.alert("We found a banana in the " + array + " array");
     }
 }
 
@@ -60,36 +58,3 @@ function GreetingFunc() {
     }
 }
 GreetingFunc();
-
-function addYear() {
-    var d = new Date();
-    var year = d.getFullYear();
-    document.getElementById("copyYear").innerHTML = "Copyright©" + year;
-}
-
-function showList() {
-    document.getElementById("favList").style.display = "block";
-    document.getElementById("seeMoreButton").style.display = "none";
-}
-
-$(document).ready(function(){
-    $("#readMoreButton").click(function(){
-        $("#readMoreIntro").show();
-        $("#readLessButton").show();
-        $("#readMoreButton").hide();
-    })
-    $("#readLessButton").click(function(){
-        $("#readMoreIntro").hide();
-        $("#readLessButton").hide();
-        $("#readMoreButton").show();
-    })
-})
-
-function validate(){
-    let userName = document.getElementById("fullname");
-    let userEmail = document.getElementById("email");
-    let userComment = document.getElementById("comment");
-    if (!userName.checkValidity() || !userEmail.checkValidity() || !userComment.checkValidity()) {
-        document.getElementById("validationFailMessage").innerHTML = "Please fill out all the fields in the form.";
-    }
-}
