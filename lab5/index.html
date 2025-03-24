@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Annie Min">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Annie Min professional website">
+
+    <title>Annie Min</title>
+</head>
+
+<body onload="addYear()">
+    <header>
+        <h1 id="backgroundColor">
+            Annie Min
+        </h1>
+
+        <nav>
+            <a class="navTitle" href="index.html" target="_self">Home</a>
+            <a class="navTitle" href="views/cv.html" target="_self">CV</a>
+            <a class="navTitle" href="views/contact.html" target="_self">Contact me</a>
+            <a class="navTitle" href="views/fun.html" target="_self">For fun</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h2 id="greeting">Hi, I am Annie</h2>
+        <img src="static/beach-image.jpg" alt="Picture of beach" width="600" height="300">
+        <p id="intro">
+            Welcome to my website! My name is Annie Min, a current sophomore 
+            studying Information Systems at Carnegie Mellon University. 
+        </p>
+
+        <button id="readMoreButton">Read More</button>
+        <p id="readMoreIntro">
+            stuff stuff stuff
+        </p>
+        <button id="readLessButton">Read Less</button>
+    </div>
+
+    <footer>
+        <p id="copyYear"></p>
+    </footer>
+</body>
+</html>
