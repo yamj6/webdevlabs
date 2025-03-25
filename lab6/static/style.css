@@ -1,0 +1,190 @@
+:root {
+    --indigo: #4B0076;
+    --lavender: #bf92e4;
+    --thistle: #d6bde7;
+    --lightmauve: #d6cadd;
+}
+
+* {
+    padding: 5px;
+    margin: 5px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-lab2Bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: none;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1{
+    color: var(--lavender);
+}
+
+#backgroundColor {
+    background-color: indigo;
+}
+
+a.navTitle {
+    text-decoration: none;
+    color: var(--indigo);
+    margin-right: 15px;
+}
+
+th {
+    padding: 12px;
+    background-color: var(--indigo);
+    color: var(--lavender);
+    width: fit-content;
+}
+
+td:nth-child(even) {
+    background-color: var(--thistle);
+}
+td:nth-child(odd) {
+    background-color: var(--lightmauve);
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/* #favList {
+    display: none;
+} */
+
+.funIMG {
+    border-radius: 100%;
+    width: 300px;
+    height: 400px;
+}
+
+#readMoreIntro {
+    display: none;
+}
+
+#readLessButton {
+    display: none;
+}
+
+#validationFailMessage {
+    text-align: center;
+}
+
+div.item4 {
+    padding: 10px;
+    border-radius: 3%;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: fit-content;
+}
+#getAdviceButton {
+    border-radius: 10%;
+    display: inline-block;
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'nav nav'
+    'main-img main'
+    'bottom_content bottom_content'
+    'footer footer';
+}
+
+header {
+    grid-area: header;
+    background-color: lightgray;
+}
+nav {
+    grid-area: nav;
+}
+figure {
+    grid-area: main-img;
+    background-color: lightblue;
+    height: auto;
+}
+main {
+    grid-area: main;
+    background-color: lightsalmon;
+}
+summary {
+    grid-area: bottom_content;
+    background-color: lightpink;
+}
+footer {
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media only screen and (max-width:650px){
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'main-img'
+        'main'
+        'bottom_content'
+        'footer';
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@keyframes headerColor {
+    0%   {background-color:var(--lightmauve);}
+    25%  {background-color:var(--thistle);}
+    50%  {background-color:var(--lavender);}
+    75%  {background-color:var(--thistle);}
+    100% {background-color:var(--lightmauve);}
+}
+  
+/* The element to apply the animation to */
+header {
+    background-color: var(--lightmauve);
+    animation-name: headerColor;
+    animation-duration: 4s;
+}
